@@ -50,6 +50,10 @@
     max-width: 33%;
 }
 
+#info img {
+    max-width: 100%;
+}
+
 #content {
     grid-area: main;
 }
