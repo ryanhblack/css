@@ -47,7 +47,7 @@
 
 #info {
     grid-area: left;
-    max-width: 33%;
+    max-width: 100%;
 }
 
 #info img {
