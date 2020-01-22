@@ -24,6 +24,14 @@
 .menu-link a {
     display: block;
     padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-link a:visited {
+    color: #000;
 }
 
 .menu-link a:hover {
@@ -39,6 +47,7 @@
 
 #info {
     grid-area: left;
+    max-width: 33%;
 }
 
 #content {
