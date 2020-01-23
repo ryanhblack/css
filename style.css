@@ -21,6 +21,10 @@
     float: left;
 }
 
+.menu-link.right {
+    float: right;
+}
+
 .menu-link a {
     display: block;
     padding: 8px;
