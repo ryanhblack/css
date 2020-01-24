@@ -22,11 +22,20 @@ body {
 }
 
 .menu-link {
+    width: 100%;
     float: left;
 }
 
-.menu-link.right {
-    float: right;
+@media only screen and (min-width: 768px) {
+    .menu-link {
+        float: left;
+        width: auto;
+    }
+
+    .menu-link.right {
+        float: right;
+        width: auto;
+    }
 }
 
 .menu-link a {
@@ -82,7 +91,20 @@ body {
     grid-template-areas:
         'header header header'
         'menu menu menu'
-        'left main main'
+        'left left left'
+        'main main main'
         'footer footer footer';
     grid-gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'menu menu menu'
+            'left main main'
+            'footer footer footer';
+        grid-gap: 10px;
+    }
 }
