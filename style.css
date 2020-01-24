@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
 }
@@ -11,35 +15,11 @@ body {
 /*** Top Menu ***/
 
 #top-menu {
-    grid-area: menu;
+    display: flex;
     background-color: #ccc;
 }
 
-#top-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .menu-link {
-    width: 100%;
-    float: left;
-}
-
-@media only screen and (min-width: 768px) {
-    .menu-link {
-        float: left;
-        width: auto;
-    }
-
-    .menu-link.right {
-        float: right;
-        width: auto;
-    }
-}
-
-.menu-link a {
-    display: block;
     padding: 8px;
     font-size: 18px;
     font-weight: 700;
@@ -47,32 +27,42 @@ body {
     color: #000;
 }
 
-.menu-link a:visited {
+.menu-link.right {
+    margin-left: auto;
+}
+
+.menu-link:visited {
     color: #000;
 }
 
-.menu-link a:hover {
+.menu-link:hover {
     background-color: #999;
 }
 
-.menu-link a.active {
+.menu-link.active {
     background-color: #000;
     color: #fff;
 }
 
 /*** Info & Content ***/
 
-#info {
-    grid-area: left;
-    max-width: 100%;
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#info img {
-    max-width: 100%;
+#info {
+    flex: 30%;
+    padding: 15px;
 }
 
 #content {
-    grid-area: main;
+    flex: 70%;
+    padding: 15px;
+}
+
+#info img {
+    width: 100%;
 }
 
 /*** Footer ***/
@@ -84,27 +74,13 @@ body {
     text-align: center;
 }
 
-/*** Grid settings ***/
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'header header header'
-        'menu menu menu'
-        'left left left'
-        'main main main'
-        'footer footer footer';
-    grid-gap: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'header header header'
-            'menu menu menu'
-            'left main main'
-            'footer footer footer';
-        grid-gap: 10px;
+@media screen and (max-width: 767px) {
+    #top-menu, #flexbox {
+        flex-direction: column;
+    }
+    
+    .menu-link {
+        width: 100%;
+        text-align: center;
     }
 }
