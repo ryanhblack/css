@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        hr {
+            border-top: 1px solid blue;
+        }
+        
+        h5 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        
+        .navbar {
+            border-radius: 0px;
+            font-family: serif;
+        }
+        
+        .navbar.navbar-default {
+            background-color: #5280e9;
+        }
+        
+        .navbar-default a {
+            color: #fff !important;
+            font-weight: 600;
+        }
+        
+        .navbar-default li.active a {
+            background-color: blue !important;
+        }
+        
+        .navbar-brand {
+            font-family: cursive;
+        }
+        
+        #content img {
+            width: 33%;
+            float: left;
+            margin: 10px;
+        }
+        
+        #footer {
+            background-color: #5280e9;
+            color: #fff;
+            text-align: center;
+            clear: both;
+            overflow: auto;
+        }
+    </style>
+    <title>Design Principles</title>
+</head>
+
+<body>
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Navbar Toggle button an brand name -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GoodsCo</a>
+            </div>
+
+            <!-- Nav links -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Content -->
+    <div id="content-container">
+        <div class="hidden-xs col-sm-1 col-md-2">&nbsp;</div>
+        <div id="content" class="col-xs-12 col-sm-10 col-md-8">
+            <img src="images/ichiban.jfif" alt="Ichiban" />
+            <h2>Sapporo Ichiban - 24 Pack</h2>
+            <hr />
+            <h3>$24.99</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;This Sapporo Ichiban will take remind you of the delicious flavors of Japanese culture. Noodles are made with high-quality flour and seasuned with beef boulion and green onion. I think I'm 'boutta go eat one of these right now.</p>
+            <p><a href="#">Add to Cart</a> | 
+            <a href="#">Find in Store</a></p>
+            <hr style="clear: both" />
+            <img src="images/nutrition.jpg" alt="nutrition" />
+            <h5>Details</h5>
+            <p><strong>Ingredients:</strong> ORIENTAL NOODLES: ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), PALM OIL (TBHQ AND CITRIC ACID ADDED TO PROTECT FLAVOR), TAPIOCA STARCH, SOY SAUCE (WATER, WHEAT, SOYBEANS, SALT, SODIUM BENZOATE [PRESERVATIVE]), SALT, GUAR GUM, SODIUM CARBONATE, TOCOPHEROLS, POTASSIUM CARBONATE. SOUP BASE: SALT, MONOSODIUM GLUTAMATE, SUGAR, MALTODEXTRIN, SOY SAUCE POWDER (SOY SAUCE [WHEAT, SOYBEANS, SALT], MALTODEXTRIN, SALT), ONION POWDER, LEEK CHIPS, CARAMEL COLOR (CONTAINS SULFITES), SPICES, CHICKEN BROTH POWDER (MALTODEXTRIN, CHICKEN BROTH FLAVOR [CONTAINS CHICKEN BROTH, SALT, FLAVOR]), BEEF STOCK POWDER, DISODIUM SUCCINATE, MALIC ACID, GARLIC POWDER, DISODIUM INOSINATE, DISODIUM GUANYLATE, CORN OIL, SODIUM CITRATE, SESAME OIL.</p>
+            <h5>Product features</h5>
+            <p>Sapporo?? Ichiban Japanese Style Noodles ; Original Flavored Soup. With natural and artificial flavors. It is a traditional quality of Sapporo Ichiban. It can be cooked in 3 minutes.</p>
+            <ul style="float: left;">
+                <li>Cook in 3 minutes</li>
+            </ul><br /><br />
+            <p>Traditional quality Of sapporo ICHIBAN</p>
+            <h5>Special Features</h5>
+            <p>Traditional quality Of sapporo ichiban</p>
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-2">&nbsp;</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="col-xs-12 col-sm-4">
+            &nbsp;
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <p>&copy; 2020 GoodsCo</p>
+        </div>
+        <div class="hidden-xs col-sm-4">
+            &nbsp;
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
